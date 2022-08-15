@@ -1,7 +1,6 @@
 import { StyleSheet, View, ScrollView } from 'react-native';
 import {useState} from 'react';
-import BottomButton from '../login-signUp-component/BottomButton';
-import SignUpInput from '../login-signUp-component/SignUpInput'
+import SignUpInput from '../login-signUp-component/SignUpInput';
 import Topbar from '../login-signUp-component/Topbar';
 import BirthInput from '../login-signUp-component/BirthInput';
 import GenderInput from '../login-signUp-component/GenderInput';
