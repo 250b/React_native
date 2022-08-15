@@ -57,10 +57,9 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         marginRight: 6,
         fontSize:17,
-        paddingHorizontal:22 ,
+        paddingHorizontal:20,
     },
     year: {
         width:85,
     },
   });
-  {/*네글자 집엉넣게 */}

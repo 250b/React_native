@@ -1,8 +1,8 @@
 import { StyleSheet, Text, Pressable, Image } from 'react-native';
 
-function SettingMenu({text}){
+function SettingMenuButton({text, pressHandler}){
     return (
-        <Pressable style={styles.container}>
+        <Pressable style={styles.container} onPress={pressHandler}>
             <Text style={styles.text}>
                 {text}
             </Text>
@@ -11,7 +11,7 @@ function SettingMenu({text}){
 
     )
 }
-export default SettingMenu;
+export default SettingMenuButton;
 
 const styles = StyleSheet.create({
     container:{

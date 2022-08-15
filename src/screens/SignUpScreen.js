@@ -1,8 +1,8 @@
-import { StyleSheet, View, ScrollView } from 'react-native';
+import { StyleSheet, SafeAreaView, ScrollView } from 'react-native';
 import {useState} from 'react';
 import BottomButton from '../login-signUp-component/BottomButton';
 import SignUpInput from '../login-signUp-component/SignUpInput'
-import Topbar from '../login-signUp-component/Topbar';
+import SignUpTopbar from '../login-signUp-component/SignUpTopbar';
 import BirthInput from '../login-signUp-component/BirthInput';
 import GenderInput from '../login-signUp-component/GenderInput';
 import 'react-native-gesture-handler';
@@ -25,9 +25,9 @@ export const SignUpScreen=({navigation})=> {
   };
 
     return (
-      <View style={styles.container}>
-        <Topbar
-          button={"<"} text={"회원가입"}
+      <SafeAreaView style={styles.container}>
+        <SignUpTopbar
+          text={"회원가입"}
           pressHandler={pressHandler}/>
           <ScrollView showsVerticalScrollIndicator={false}>
               <SignUpInput
@@ -62,7 +62,7 @@ export const SignUpScreen=({navigation})=> {
         <BottomButton
           text={"완료"} 
           pressHandler={pressHandler}/>
-      </View>
+      </SafeAreaView>
     );
   }
 

@@ -1,4 +1,4 @@
-import { StyleSheet, Pressable, Text, View } from 'react-native';
+import { StyleSheet,SafeAreaView, Pressable, Text, View } from 'react-native';
 import {useState} from 'react';
 import LoginInput from '../login-signUp-component/LoginInput';
 import BottomButton from '../login-signUp-component/BottomButton';
@@ -17,8 +17,8 @@ export const LoginScreen=({navigation})=>{
     }
 
     return (
-        <View style={styles.contianer}>
-            <View style={styles.image}></View>{/*나중에 image로 교체*/}
+        <SafeAreaView style={styles.contianer}>
+            <View style={styles.image}></View>
             <Text style={styles.title}>SAVEARTH</Text>
 
               <LoginInput
@@ -37,8 +37,8 @@ export const LoginScreen=({navigation})=>{
               <Text style={styles.signUpText}>아직 회원이 아니신가요?</Text>
               <Pressable onPress={()=>navigation.navigate('SignUp')}><Text style={[styles.signUpText, styles.signUpTextLink]}> 회원가입</Text></Pressable>
             </View>
-          <BottomButton style={styles.loginButton } text={"로그인"} onPress={()=>navigation.navigate('Home')}/>
-        </View>
+          <BottomButton style={styles.loginButton } text={"로그인"} pressHandler={()=>navigation.navigate('TabNav')}/>
+        </SafeAreaView>
     );
   }
 

@@ -12,11 +12,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import {LoginScreen} from "./src/screens/LoginScreen";
 import {SignUpScreen} from "./src/screens/SignUpScreen";
-import {HomeScreen} from "./src/screens/HomeScreen";
-import {MapScreen} from "./src/screens/MapScreen"
-import {RecordScreen} from "./src/screens/RecordScreen";
-import {CommunityScreen} from "./src/screens/CommunityScreen";
-import {SettingScreen} from "./src/screens/SettingScreen";
+import {TabNavScreen} from "./src/screens/TabNavScreen";
+import {SettingNicknameScreen} from "./src/screens/SettingNicknameScreen";
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -30,13 +27,11 @@ export default function App() {
   if (!fontsLoaded) return null;
   return <SafeAreaProvider>
     <NavigationContainer>
-      <Tab.Navigator screenOptions={{headerShown: false}}>
-        <Tab.Screen name="Home" component={HomeScreen}/>
-        <Tab.Screen name="Map" component={MapScreen}/>
-        <Tab.Screen name="Record" component={RecordScreen}/>
-        <Tab.Screen name="Community" component={CommunityScreen}/>
-        <Tab.Screen name="Setting" component={SettingScreen}/>
-      </Tab.Navigator>
+      <Stack.Navigator screenOptions={{headerShown: false}}>
+        <Stack.Screen name="Login" component={LoginScreen}/>
+        <Stack.Screen name="SignUp" component={SignUpScreen}/>
+        <Stack.Screen name="TabNav" component={TabNavScreen}/>
+      </Stack.Navigator>
     </NavigationContainer>
   </SafeAreaProvider>
 }

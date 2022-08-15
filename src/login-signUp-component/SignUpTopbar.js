@@ -1,6 +1,6 @@
 import { View, StyleSheet, Pressable, Text, Image } from "react-native";
 
-function Topbar({text, pressHandler}){
+function SignUpTopbar({text, pressHandler}){
     return (
         <View style={styles.container}>
             <Pressable onPress={pressHandler}>
@@ -10,7 +10,7 @@ function Topbar({text, pressHandler}){
         </View>
     )
 }
-export default Topbar;
+export default SignUpTopbar;
 
 const styles = StyleSheet.create({
     container:{
