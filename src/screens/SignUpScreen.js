@@ -1,6 +1,7 @@
 import { StyleSheet, View, ScrollView } from 'react-native';
 import {useState} from 'react';
-import SignUpInput from '../login-signUp-component/SignUpInput';
+import BottomButton from '../login-signUp-component/BottomButton';
+import SignUpInput from '../login-signUp-component/SignUpInput'
 import Topbar from '../login-signUp-component/Topbar';
 import BirthInput from '../login-signUp-component/BirthInput';
 import GenderInput from '../login-signUp-component/GenderInput';
@@ -32,15 +33,18 @@ export const SignUpScreen=({navigation})=> {
               <SignUpInput
                 name={"아이디"}
                 value={signUpId}
-                setValue={setSignUpId}/>
+                setValue={setSignUpId}
+                placeholder={"아이디를 입력해주세요"}/>
               <SignUpInput
                 name={"비밀번호"}
                 value={signUpPw}
-                setValue={setSignUpPw}/>
+                setValue={setSignUpPw}
+                placeholder={"비밀번호를 입력해주세요"}/>
               <SignUpInput
                 name={"닉네임"}
                 value={signUpName}
-                setValue={setSignUpName}/>
+                setValue={setSignUpName}
+                placeholder={"닉네임를 입력해주세요"}/>
               <BirthInput
                 name={"생년월일"}
                 yearValue={signUpYear}

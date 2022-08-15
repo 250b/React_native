@@ -49,15 +49,14 @@ const styles = StyleSheet.create({
   },
   selected: {
     borderRadius: 15,
-    borderWidth: 1,
-    borderStyle: 'solid',
+    borderWidth: 0,
     width:64,
     height: 62,
     textAlign: 'center',
     alignItems: 'center',
     justifyContent: 'center',
     marginRight: 10,
-    backgroundColor: '#000000',
+    backgroundColor: '#218EF2',
   },
   selectedText:{
     color:'#FFFFFF',

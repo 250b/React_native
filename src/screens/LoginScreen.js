@@ -64,7 +64,7 @@ export const LoginScreen=({navigation})=>{
       fontSize: 34,
       marginBottom:51,
       fontFamily: 'NotoSansKR_700Bold',
-      color: '#E0E0E0',
+      color: '#218EF2',
       height: 41
 
     },

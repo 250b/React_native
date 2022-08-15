@@ -1,6 +1,6 @@
 import { StyleSheet, TextInput, View, Text } from 'react-native';
 
-function SignUpInput({name, value, setValue, secureTextEntry}){
+function SignUpInput({name, value, setValue, placeholder, secureTextEntry}){
     return(
         <View style={styles.container}>
             <Text style={styles.name}>{name}</Text>
@@ -9,6 +9,7 @@ function SignUpInput({name, value, setValue, secureTextEntry}){
                 value={value}
                 secureTextEntry={secureTextEntry}
                 onChangeText={setValue}
+                placeholder={placeholder}
                 ></TextInput>
             <Text style={styles.message}>조건</Text>
         </View>
@@ -35,6 +36,7 @@ const styles = StyleSheet.create({
         paddingHorizontal:24,
         fontFamily: 'NotoSansKR_400Regular',
         fontSize:17,
+        textAlign:'center'
     },
     message:{
         marginTop:10,

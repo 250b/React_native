@@ -22,14 +22,15 @@ const styles = StyleSheet.create({
         width: 343
     },
     image:{
-        width:16,
-        height:22,
-        marginRight:25,
+        width:36,
+        height:36,
+        marginRight:72,
 
     },
     text:{
         fontSize:34,
         fontWeight:'bold',
-        fontFamily: 'NotoSansKR_700Bold'
+        fontFamily: 'NotoSansKR_700Bold',
+        justifyContent:'center'
     }
 })
