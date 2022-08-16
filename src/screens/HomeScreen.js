@@ -6,3 +6,4 @@ export const HomeScreen = ({navigation}) => {
         <Text>Home</Text>
     </SafeAreaView>
 }
+
