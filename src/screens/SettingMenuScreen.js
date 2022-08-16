@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {StyleSheet,View, SafeAreaView, Text} from 'react-native';
-import SettingMenuButton from '../setting-component/SettingMenuButton';
+import SettingMenuButton from '../component/setting-component/SettingMenuButton';
 import 'react-native-gesture-handler';
 
 export const SettingMenuScreen = ({navigation}) => {

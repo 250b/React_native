@@ -6,7 +6,7 @@ function SettingMenuButton({text, pressHandler}){
             <Text style={styles.text}>
                 {text}
             </Text>
-            <Image style={styles.image} source={require('../../image/settingMenuArrow.png')}/>
+            <Image style={styles.image} source={require('./settingMenuArrow.png')}/>
         </Pressable>
 
     )

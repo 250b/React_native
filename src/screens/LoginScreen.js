@@ -1,7 +1,7 @@
 import { StyleSheet,SafeAreaView, Pressable, Text, View } from 'react-native';
 import {useState} from 'react';
-import LoginInput from '../login-signUp-component/LoginInput';
-import BottomButton from '../login-signUp-component/BottomButton';
+import LoginInput from '../component/login-component/LoginInput';
+import BottomButton from '../component/login-component/BottomButton';
 import 'react-native-gesture-handler';
 
 export const LoginScreen=({navigation})=>{

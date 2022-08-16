@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {StyleSheet, SafeAreaView, View} from 'react-native';
 import 'react-native-gesture-handler';
-import  SettingTopbar from '../setting-component/SettingTopbar'
+import  SettingTopbar from '../component/setting-component/SettingTopbar'
 
 export const SettingNicknameScreen=({navigation})=>{
     return(
