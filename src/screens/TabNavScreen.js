@@ -17,7 +17,7 @@ const Tab = createBottomTabNavigator();
 export const TabNavScreen = ()=> {
     return(
         <Tab.Navigator screenOptions={{headerShown: false,tabBarShowLabel: false, 
-            tabBarStyle: {height:94, borderTopWidth: 0, }}}>
+            tabBarStyle: {height:104, borderTopWidth: 0, }}}>
             <Tab.Screen
                 name="Home"
                 component={HomeScreen} 
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
     icon:{
         width:44,
         height:44,
-        marginBottom:40,
-        marginTop:10
+        marginBottom:30,
+        marginTop:10,
     }
 })

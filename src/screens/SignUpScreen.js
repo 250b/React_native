@@ -1,10 +1,10 @@
 import { StyleSheet, SafeAreaView, ScrollView } from 'react-native';
 import {useState} from 'react';
-import BottomButton from '../component/signup-component/BottomButton';
-import SignUpInput from '../component/signup-component/SignUpInput'
-import SignUpTopbar from '../component/signup-component/SignUpTopbar';
-import BirthInput from '../component/signup-component/BirthInput';
-import GenderInput from '../component/signup-component/GenderInput';
+import BottomButton from '../components/SignUpScreen/BottomButton';
+import SignUpInput from '../component/SignUpScreen/SignUpInput'
+import SignUpTopbar from '../component/SignUpScreen/SignUpTopbar';
+import BirthInput from '../component/SignUpScreen/BirthInput';
+import GenderInput from '../component/SignUpScreen/GenderInput';
 import 'react-native-gesture-handler';
 
 export const SignUpScreen=({navigation})=> {
@@ -71,6 +71,6 @@ export const SignUpScreen=({navigation})=> {
       flex: 1,
       backgroundColor: '#fff',
       alignItems:'center',
-      justifyContent: 'center'
+      justifyContent: 'flex-end'
     },
   })

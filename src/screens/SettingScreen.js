@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {StyleSheet, SafeAreaView, Text} from 'react-native';
-import {SettingMenuScreen} from './SettingMenuScreen';
-import {SettingNicknameScreen} from './SettingNicknameScreen';
+import {SettingMenuScreen} from '../components/SettingScreen/SettingMenuScreen';
+import {SettingNicknameScreen} from '../components/SettingScreen/SettingNicknameScreen';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';

@@ -1,35 +1,41 @@
-import { View, StyleSheet,SafeAreaView, Pressable, Text, Image } from "react-native";
+import { View, StyleSheet, Pressable, Text, Image } from "react-native";
 
-function SettingTopbar({text, pressHandler}){
+function SignUpTopbar({text, pressHandler}){
     return (
         <View style={styles.container}>
             <Pressable onPress={pressHandler}>
                 <Image style={styles.image} source={require('./topbarArrow.png')}/>
             </Pressable>
-            <Text style={styles.text}>{text}</Text>
+            <View style={styles.area}>
+                <Text style={styles.text}>{text}</Text>
+            </View>
         </View>
     )
 }
-export default SettingTopbar;
+export default SignUpTopbar;
 
 const styles = StyleSheet.create({
     container:{
         flexDirection:'row',
-        justifyContent: 'center',
+        alignItems: 'center',
         marginBottom:30,
+        marginTop: 48,
         width: 343,
-        marginTop: 48
+        height: 41,
     },
     image:{
         width:36,
         height:36,
-        marginRight:21,
-
+    },
+    area:{
+        flex:1,
+        justifyContent:'center',
+        alignItems:'center'
     },
     text:{
         fontSize:34,
+        fontWeight:'bold',
         fontFamily: 'NotoSansKR_700Bold',
-        justifyContent:'center',
-        lineHeight: 41,
+        width:128,
     }
 })
