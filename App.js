@@ -13,7 +13,6 @@ import { createStackNavigator } from '@react-navigation/stack';
 import {LoginScreen} from "./src/screens/LoginScreen";
 import {SignUpScreen} from "./src/screens/SignUpScreen";
 import {TabNavScreen} from "./src/screens/TabNavScreen";
-import {SettingNicknameScreen} from "./src/screens/SettingNicknameScreen";
 import { StyleSheet } from 'react-native';
 
 const Tab = createBottomTabNavigator();

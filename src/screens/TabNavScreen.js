@@ -22,36 +22,36 @@ export const TabNavScreen = ()=> {
                 name="Home"
                 component={HomeScreen} 
                 options={{tabBarIcon:({focused})=>
-                (focused?<Image source ={require("../component/icon/activeHomeIcon.png")} style={styles.icon}/>
-                :<Image source ={require("../component/icon/homeIcon.png")} style={styles.icon}/>)}}
+                (focused?<Image source ={require("../components/icon/activeHomeIcon.png")} style={styles.icon}/>
+                :<Image source ={require("../components/icon/homeIcon.png")} style={styles.icon}/>)}}
                 />
             <Tab.Screen
                 name="Map"
                 component={MapScreen}
                 options={{tabBarIcon:({focused})=>
-                (focused?<Image source ={require("../component/icon/activeMapIcon.png")} style={styles.icon}/>
-                :<Image source ={require("../component/icon/mapIcon.png")} style={styles.icon}/>)}}
+                (focused?<Image source ={require("../components/icon/activeMapIcon.png")} style={styles.icon}/>
+                :<Image source ={require("../components/icon/mapIcon.png")} style={styles.icon}/>)}}
             />
             <Tab.Screen
                 name="Record" 
                 component={RecordScreen}
                 options={{tabBarIcon:({focused})=>
-                (focused?<Image source ={require("../component/icon/activeRecordIcon.png")} style={styles.icon}/>
-                :<Image source ={require("../component/icon/recordIcon.png")} style={styles.icon}/>)}}
+                (focused?<Image source ={require("../components/icon/activeRecordIcon.png")} style={styles.icon}/>
+                :<Image source ={require("../components/icon/recordIcon.png")} style={styles.icon}/>)}}
             />
             <Tab.Screen
                 name="Community"
                 component={CommunityScreen}
                 options={{tabBarIcon:({focused})=>
-                (focused?<Image source ={require("../component/icon/activeCommunityIcon.png")} style={styles.icon}/>
-                :<Image source ={require("../component/icon/communityIcon.png")} style={styles.icon}/>)}}
+                (focused?<Image source ={require("../components/icon/activeCommunityIcon.png")} style={styles.icon}/>
+                :<Image source ={require("../components/icon/communityIcon.png")} style={styles.icon}/>)}}
                 />
             <Tab.Screen
                 name="Setting"
                 component={SettingScreen}
                 options={{tabBarIcon:({focused})=>
-                (focused?<Image source ={require("../component/icon/activeSettingIcon.png")} style={styles.icon}/>
-                :<Image source ={require("../component/icon/settingIcon.png")} style={styles.icon}/>)}}
+                (focused?<Image source ={require("../components/icon/activeSettingIcon.png")} style={styles.icon}/>
+                :<Image source ={require("../components/icon/settingIcon.png")} style={styles.icon}/>)}}
             />
         </Tab.Navigator>
     )
