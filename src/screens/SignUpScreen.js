@@ -60,7 +60,8 @@ export const SignUpScreen=({navigation})=> {
                 setValue={GenderHandler}/>
           </ScrollView>
         <BottomButton
-          text={"완료"} 
+          text={"완료"}
+          buttonControl={signUpId&& signUpPw&& signUpName&& signUpYear&& signUpMonth&& signUpDay} 
           pressHandler={pressHandler}/>
       </SafeAreaView>
     );
